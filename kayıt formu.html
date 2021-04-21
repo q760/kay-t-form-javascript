@@ -1,0 +1,142 @@
+﻿<!Doctpe html>
+ <html>
+     <head>
+     <meta charset="utf-8">
+     <title>Kayıt Formu</title>
+  </head>
+
+ <body>
+     <h1> ABC Tasarım Programı Kurulum ve Satış Sözleşmesi </h1>
+     <form action="" method="post" enctype="multipart/form-data">
+          <fieldset>
+              <legend>Sözleşme Onay</legend>
+              <input type="checkbox" id="onay" name="onay"
+               value="1" required>
+               <label for="onay">Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum.</label><br>
+               <input type="submit"  id="btnK"  name="btnK" 
+                value="Formu Kaydet">
+          <input type="reset"  id="btnT"  name="btnT"  value="Formu Temizle">          </fieldset>
+          </fieldset>
+          <fieldset>
+              <legend>Kullanıcı Bilgileri</legend>
+              <table>
+                  <tr>
+                      <td>Form Güvenlik ID</td>
+                      <td>
+                      <input type="text" id="gID" name="gID" 
+                      value="asfg"disabled>
+                      <input type="hidden" id="gIDI"
+                       name="gIDI" value="asfg">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Ad</td>
+                      <td>
+                      <input type="text" name="ad" id="ad"
+                      placeholder="adınızı girin">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>soyad</td>
+                      <td>
+                      <input type="text" name="sad" id="sad"
+                      placeholder="soyadınızı girin">
+                      </td>
+                  <tr>
+                  </tr>
+                      <td>yaş</td>
+                      <td>
+                          <input type="number" min="20"  max="100"
+                           step="2">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>mail</td>
+                      <td>
+                      <input type="email" id="eposta"
+                       name="eposta">
+                      </td>
+                  <tr>
+                  </tr>
+                      <td>Fotograf Ekle</td>
+                      <td>
+                      <input type="file" id="dosya" name="dosya">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Ürün Şifresi (6 haneli)</td>
+                      <td>
+                      <input type="password" id="sifre"
+                      name="sifre" required maxlength="6">
+                      </td>
+                  </tr>
+              </table>
+              </fieldset>
+              <fieldset>
+                   <legend>Diğer Bilgiler</legend>
+                    <table>
+                        <tr>
+                            <th colspan"2">
+                            Buradaki alanlar Mesleki Deneyimi Kapsar
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Sektöre göre giriş tarihi</td>
+                            <td>
+                            <input type="date" id="tarih" name="tarih"
+                            value="2010-01-01">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sektör Deneyimi</td>
+                            <td>
+                            <label>
+                                  <input type="radio" id="yilı" name="yil"
+                                  value="1"> 1 - 5 yıl
+                            </label><br>
+                            <label>
+                            <input type="radio" id="yil2" name="yil"
+                            value="2"> 6 - 10 yıl
+                            </label><br>
+                            <label>
+                                  <input type="radio" id="yil3" name="yil"
+                                   value="1"> 15 yıl üzeri
+                            </label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Programlama Dilleri</td>
+                            <td>
+                                <select size="5" multiple name="pdil" 
+                                id=pdil>
+                                    <option value="1">C#</option>
+                                    <option value="2"
+                                     selected>PHP</option>
+                                    <option value="3">JAVA</>
+                                    <option value="4">JavaScript</option>
+                                    <option value="5">Python</option>
+                                    <option value="6">PASCAL</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+             </fieldset>
+             <fielset> 
+                 <legend>Sözleşme Kopyası</legend>
+                 <textarea readonly cols="50"rows="5" id="sozleşme"
+                  name="sozleşme">Lorem Ipsum ,dizgi ve baskı
+                  endüstrisinde kullanılan mıgır metinleridir.Lorem Ipsum,adı bilinmeyen bir matbacının bir hurufat
+                  numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri enstri
+                  standardı sahne metinler olarak kullanılmıştır.</textarea>
+             </fieldset>
+             <fieldset>
+                 <legend>Mail Listesi</legend>
+                 Mail listesine katılmak istiyorum
+                 <input type="radio" id="mliste" name="mliste"
+                  checked><br>
+                 Mail listesine katılmak istemiyorum
+                 <input type="radio" id="mliste1" name="mliste">
+                 </fieldset>
+            </form>
+         </body></html>
+ 
